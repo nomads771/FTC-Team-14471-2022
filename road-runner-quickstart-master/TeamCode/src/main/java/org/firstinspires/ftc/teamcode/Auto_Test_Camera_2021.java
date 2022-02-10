@@ -32,8 +32,8 @@ public class Auto_Test_Camera_2021 extends LinearOpMode {
     OpenCvCamera camera;
     
     //Pipeline
-//    Pipeline_Target_Detect myPipeline;
-    PipeLine_Color_Detect myPipeline;
+    Pipeline_Target_Detect myPipeline;
+    //PipeLine_Color_Detect myPipeline;
     
     @Override
     public void runOpMode() {
@@ -47,8 +47,8 @@ public class Auto_Test_Camera_2021 extends LinearOpMode {
         //Test of Webcam
         webcamName = hardwareMap.get(WebcamName.class, "Webcam 1");
         camera = OpenCvCameraFactory.getInstance().createWebcam(webcamName);
-//        myPipeline = new Pipeline_Target_Detect();
-        myPipeline = new PipeLine_Color_Detect(Constants.lowCyanBounds, Constants.highCyanBounds);
+        myPipeline = new Pipeline_Target_Detect();
+        //myPipeline = new PipeLine_Color_Detect(Constants.lowCyanBounds, Constants.highCyanBounds);
         
        
         // Send telemetry message to signify robot waiting;

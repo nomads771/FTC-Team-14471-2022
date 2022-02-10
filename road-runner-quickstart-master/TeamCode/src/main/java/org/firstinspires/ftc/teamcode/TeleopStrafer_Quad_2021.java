@@ -180,7 +180,7 @@ public class TeleopStrafer_Quad_2021 extends OpMode {
 //            robot.capping.setPosition(1);
 
         // Move both servos to new position.  Assume servos are mirror image of each other.
-        clawOffset = Range.clip(clawOffset, 0.1, 0.5);
+        clawOffset = Range.clip(clawOffset, 0.0, 0.5);
         robot.capping.setPosition(robot.MID_SERVO + clawOffset);
 //        robot.leftHand.setPosition(robot.MID_SERVO + clawOffset);
 //        robot.rightHand.setPosition(robot.MID_SERVO - clawOffset);
@@ -208,7 +208,7 @@ public class TeleopStrafer_Quad_2021 extends OpMode {
             slidePos = 4450;
         }
         if(gamepad2.a) {
-            slidePos = 2000;
+            slidePos = 460;
         }
         if(gamepad1.y){
             slidePos += 10;

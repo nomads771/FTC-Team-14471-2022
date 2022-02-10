@@ -100,12 +100,11 @@ public class Vision_Auto_Blue_Right extends LinearOpMode {
         //do spin thing
         //robot.rightHand.setPosition(0.2);
         delay(0.2);
-        robot.strafeInches(0.8, -22, 5);
-        delay(0.5);
-        robot.turnAngle(-180, 0.5);
-        delay(0.3);
-        // robot.moveDistance(12, 0.5);
-        // delay(0.3);
+        robot.strafeInches(0.7, -22, 5);
+        delay(0.2);
+        robot.moveDistance(-4, 0.8);
+        delay(0.2);
+        robot.turnAngle(180, 0.5);
         //slide decision
         robot.leftArmMotorDeg(0.8, -deg, 5);
         delay(0.3);
@@ -117,23 +116,10 @@ public class Vision_Auto_Blue_Right extends LinearOpMode {
         delay(0.2);
         robot.leftHand.setPosition(0);
         delay(0.2);
+        robot.leftArmMotorDeg(0.8, -deg, 5);
+        delay(0.3);
         robot.turnAngle(120, 0.5);
         //reset arm
-//        if(zone == 1) {
-//            robot.leftArmMotorDeg(0.5, 470, 5);
-//            delay(0.2);
-//            robot.strafeInches(0.5, -4, 5);
-//        }
-//        else if(zone == 2) {
-//            robot.leftArmMotorDeg(0.5, 480, 5);
-//            delay(0.2);
-//            robot.strafeInches(0.5, -5, 5);
-//        }
-//        else {
-//            robot.leftArmMotorDeg(0.5, 780, 5);
-//            delay(0.2);
-//            robot.strafeInches(0.5, -5, 5);
-//        }
         delay(0.2);
         //spin thing
         robot.moveDistance(27, 1.0);
@@ -153,6 +139,7 @@ public class Vision_Auto_Blue_Right extends LinearOpMode {
         robot.turnAngle(45,0.5);
         delay(0.2);
         robot.strafeInches(0.5,21,5);
+        delay(0.2);
         robot.moveDistance(4, 1.0);
         // robot.strafeInches(0.5, 10, 5);
         // delay(0.2);
