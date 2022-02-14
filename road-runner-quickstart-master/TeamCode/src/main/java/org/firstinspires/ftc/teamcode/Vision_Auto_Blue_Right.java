@@ -150,7 +150,6 @@ public class Vision_Auto_Blue_Right extends LinearOpMode {
         // robot.moveDistance(8, 1.0);
         // delay(0.2);
         // robot.strafeInches(0.5, 14, 5);
-        
 
         // Autonomous Finished
         telemetry.addData("Path", "Complete");
